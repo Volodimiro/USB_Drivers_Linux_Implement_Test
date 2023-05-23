@@ -1,0 +1,14 @@
+/InterruptDriver/.*
+/InterruptDriver/*.ko
+/InterruptDriver/*.mod
+/InterruptDriver/*.o
+/InterruptDriver/*.mod.c
+/InterruptDriver/modules.order
+/InterruptDriver/Module.symvers
+/InterruptDriver_With_URB_Requests/.*
+/InterruptDriver_With_URB_Requests/*.ko
+/InterruptDriver_With_URB_Requests/*.mod
+/InterruptDriver_With_URB_Requests/*.o
+/InterruptDriver_With_URB_Requests/*.mod.c*
+/InterruptDriver_With_URB_Requests/modules.order
+/InterruptDriver_With_URB_Requests/Module.symvers
