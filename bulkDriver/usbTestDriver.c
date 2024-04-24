@@ -95,7 +95,8 @@ static ssize_t usbtest_read(struct file *f, char __user *buf, size_t count, loff
     
     memset(bufferRead, 0, MAX_PKT_SIZE);
                
-    status = usb_interrupt_msg(usb_dev, usb_rcvintpipe(usb_dev, 0x81), bufferRead, MAX_PKT_SIZE, &size, HZ*100);
+    //status = usb_interrupt_msg(usb_dev, usb_rcvintpipe(usb_dev, 0x81), bufferRead, MAX_PKT_SIZE, &size, HZ*100);
+    status = usb_bulk_msg(usb_dev, usb_rcvbulkpipe(usb_dev, 0x81), bufferRead, MAX_PKT_SIZE, &size, HZ*100);
     
     printk(KERN_ERR "status: %d\n", status);
         
