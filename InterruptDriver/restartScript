@@ -1,0 +1,6 @@
+#!/bin/bash
+
+make uninstall
+make clean
+make all
+make install 
